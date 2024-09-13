@@ -1,0 +1,110 @@
+import { Typography,styled } from "@mui/material";
+import React from "react";
+
+const AboutUs = () => {
+	return (
+		<StyledContainer>
+			<StyledTyphograpyText>По Вопросам</StyledTyphograpyText>
+			<StyledSocialNetworks>
+				<StyledWhatsapIcon
+					src="src/assets/image 4.svg"
+					alt="WhatsApp"
+				/>
+				<StyledInstagramIcon
+					src="src/assets/image 5.svg"
+					alt="Instagram"
+				/>
+				<StyledTelegramIcon
+					src="src/assets/image 6.png"
+					alt="Telegram"
+				/>
+			</StyledSocialNetworks>
+			<StyledLoremTextBox>
+				<StyledLoremText>
+					Lorem Ipsum is simply dummy text of the printing and <br />{" "}
+					typesetting industry. Lorem Ipsum has been the industry's <br />{" "}
+					standard dummy text ever since the 1500s, when an unknown <br />{" "}
+					printer took a galley of type and scrambled it to make a type <br />{" "}
+					specimen book. It has survived not only five centuries, but also{" "}
+					<br /> the leap into electronic typesetting, remaining essentially{" "}
+					<br /> unchanged. It was popularised in the 1960s with the release
+					of <br /> Letraset sheets containing Lorem Ipsum passages, and more{" "}
+					<br /> recently with desktop publishing software like Aldus
+					PageMaker <br /> including versions of Lorem Ipsum.
+				</StyledLoremText>
+			</StyledLoremTextBox>
+		</StyledContainer>
+	);
+};
+
+export default AboutUs;
+
+const StyledContainer = styled("div")(() => ({
+  width: "787px",
+  height: "681px",
+  display: "flex",
+  flexDirection: "column",
+  margin: "20px auto",
+  justifyContent: "center",
+  alignItems: "center"
+}));
+
+const StyledTyphograpyText = styled(Typography)(({ theme }) => {
+  console.log(theme); // Проверьте, что theme доступен
+  return {
+    textAlign: "center",
+    fontWeight: "600",
+    fontSize: "30px",
+    [theme.breakpoints.down("sm")]: {
+      fontFamily: "sans-serif",
+      fontSize: "16px",
+      fontWeight: "500",
+      lineHeight: "19.5px",
+      textAlign: "left",
+      
+    }
+  };
+});
+
+
+const StyledSocialNetworks = styled("div")(() => ({
+  width: "468px",
+  height: "102px",
+  display: "flex",
+  justifyContent: "space-between", // Центрирование иконок по горизонтали
+  alignItems: "center", // Центрирование иконок по вертикали
+  marginTop: "20px"
+}));
+
+const StyledWhatsapIcon = styled("img")(() => ({
+  width: "102px",
+  height: "102px",
+}));
+
+const StyledInstagramIcon = styled("img")(() => ({
+  width: "102px",
+  height: "102px",
+}));
+
+const StyledTelegramIcon = styled("img")(() => ({
+  width: "102px",
+  height: "102px",
+}));
+
+const StyledLoremTextBox = styled("div")(() => ({
+  width: "787px",
+  height: "470px",
+  display: "flex",
+  justifyContent: "center", // Центрирование текста по горизонтали
+  alignItems: "center" // Центрирование текста по вертикали
+}));
+
+const StyledLoremText = styled("p")(() => ({
+  fontFamily: "sans-serif",
+  fontSize: "24px",
+  fontWeight: "400",
+  lineHeight: "46.56px",
+  textAlign: "center",
+  maxWidth: "100%", // Чтобы текст не выходил за пределы контейнера
+  marginTop: "20px"
+}));
