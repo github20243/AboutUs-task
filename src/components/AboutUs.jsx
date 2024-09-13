@@ -66,7 +66,6 @@ const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
       fontFamily: "sans-serif",
       fontSize: "20px",
       fontWeight: "500",
-      lineHeight: "19.5px",
     }
 }))
 
