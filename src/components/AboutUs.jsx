@@ -1,8 +1,9 @@
 import { Typography,styled } from "@mui/material";
 import React from "react";
-import whatsappLogo from "../assets/image 4"
-import InstagramLogo from "../assets/image 5"
-import TelegramLogo from "../assets/image 6"
+import whatsappLogo from "../assets/image 4.svg";
+import InstagramLogo from "../assets/image 5.svg";
+import TelegramLogo from "../assets/image 6.png";
+
 
 const AboutUs = () => {
 	return (
