@@ -43,19 +43,22 @@ const AboutUs = () => {
 
 export default AboutUs;
 
-const StyledContainer = styled("div")(() => ({
+
+const StyledContainer = styled(Typography)(({ theme }) => ({
   width: "787px",
   height: "681px",
   display: "flex",
   flexDirection: "column",
   margin: "20px auto",
   justifyContent: "center",
-  alignItems: "center"
-}));
+  alignItems: "center",
+  [theme.breakpoints.down("sm")]: {
+    width: "375px",
+  height: "706px",
+  }
+}))
 
-const StyledTyphograpyText = styled(Typography)(({ theme }) => {
-  console.log(theme); // Проверьте, что theme доступен
-  return {
+const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
     textAlign: "center",
     fontWeight: "600",
     fontSize: "30px",
@@ -67,8 +70,7 @@ const StyledTyphograpyText = styled(Typography)(({ theme }) => {
       textAlign: "left",
       
     }
-  };
-});
+}))
 
 
 const StyledSocialNetworks = styled("div")(() => ({
