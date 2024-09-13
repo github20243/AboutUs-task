@@ -65,7 +65,6 @@ const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
     [theme.breakpoints.down("sm")]: {
       fontFamily: "sans-serif",
       fontSize: "20px",
-      fontWeight: "500",
     }
 }))
 
