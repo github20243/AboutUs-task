@@ -53,7 +53,7 @@ const StyledContainer = styled(Typography)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   [theme.breakpoints.down("sm")]: {
-    width: "300px",
+    width: "270px",
   height: "706px",
   }
 }))
