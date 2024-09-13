@@ -1,5 +1,8 @@
 import { Typography,styled } from "@mui/material";
 import React from "react";
+import whatsappLogo from "../assets/image 4"
+import InstagramLogo from "../assets/image 5"
+import TelegramLogo from "../assets/image 6"
 
 const AboutUs = () => {
 	return (
@@ -7,15 +10,15 @@ const AboutUs = () => {
 			<StyledTyphograpyText>По Вопросам</StyledTyphograpyText>
 			<StyledSocialNetworks>
 				<StyledWhatsapIcon
-					src="src/assets/image 4.svg"
+					src={whatsappLogo}
 					alt="WhatsApp"
 				/>
 				<StyledInstagramIcon
-					src="src/assets/image 5.svg"
+					src={InstagramLogo}
 					alt="Instagram"
 				/>
 				<StyledTelegramIcon
-					src="src/assets/image 6.png"
+					src={TelegramLogo}
 					alt="Telegram"
 				/>
 			</StyledSocialNetworks>
