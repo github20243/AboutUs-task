@@ -64,53 +64,75 @@ const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
     fontSize: "30px",
     [theme.breakpoints.down("sm")]: {
       fontFamily: "sans-serif",
-      fontSize: "16px",
+      fontSize: "20px",
       fontWeight: "500",
       lineHeight: "19.5px",
-      textAlign: "left",
-      
     }
 }))
 
 
-const StyledSocialNetworks = styled("div")(() => ({
+const StyledSocialNetworks = styled("div")(({theme}) => ({
   width: "468px",
   height: "102px",
   display: "flex",
   justifyContent: "space-between", // Центрирование иконок по горизонтали
   alignItems: "center", // Центрирование иконок по вертикали
-  marginTop: "20px"
+  marginTop: "20px",
+  [theme.breakpoints.down("sm")]: {
+    width: "211px",
+  height: "46px",
+  }
 }));
 
-const StyledWhatsapIcon = styled("img")(() => ({
+const StyledWhatsapIcon = styled("img")(({theme}) => ({
   width: "102px",
   height: "102px",
+  [theme.breakpoints.down("sm")]: {
+    width: "46px",
+  height: "46px",
+  }
 }));
 
-const StyledInstagramIcon = styled("img")(() => ({
+const StyledInstagramIcon = styled("img")(({theme}) => ({
   width: "102px",
   height: "102px",
+  [theme.breakpoints.down("sm")]: {
+    width: "46px",
+  height: "46px",
+  }
 }));
 
-const StyledTelegramIcon = styled("img")(() => ({
+const StyledTelegramIcon = styled("img")(({theme}) => ({
   width: "102px",
   height: "102px",
+  [theme.breakpoints.down("sm")]: {
+    width: "46px",
+  height: "46px",
+  }
 }));
 
-const StyledLoremTextBox = styled("div")(() => ({
+const StyledLoremTextBox = styled("div")(({theme}) => ({
   width: "787px",
   height: "470px",
   display: "flex",
   justifyContent: "center", // Центрирование текста по горизонтали
-  alignItems: "center" // Центрирование текста по вертикали
+  alignItems: "center" ,// Центрирование текста по вертикали
+  [theme.breakpoints.down("sm")]: {
+    width: "317px",
+  height: "378px",
+  }
 }));
 
-const StyledLoremText = styled("p")(() => ({
+const StyledLoremText = styled("p")(({theme}) => ({
   fontFamily: "sans-serif",
   fontSize: "24px",
   fontWeight: "400",
   lineHeight: "46.56px",
   textAlign: "center",
   maxWidth: "100%", // Чтобы текст не выходил за пределы контейнера
-  marginTop: "20px"
+  marginTop: "20px",
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "14px",
+  fontWeight: "400",
+  }
 }));
