@@ -15,16 +15,15 @@ const AboutUs = () => {
 			</StyledSocialNetworks>
 			<StyledLoremTextBox>
 				<StyledLoremText>
-					Lorem Ipsum is simply dummy text of the printing and <br />{" "}
-					typesetting industry. Lorem <br /> Ipsum has been the industry's <br />
-					standard <br /> dummy text ever since the 1500s, when an unknown <br />
-					printer took a galley of type and scrambled it to make a type <br /> specimen
-					book. It has survived not only five centuries, but also <br /> the leap into
-					electronic typesetting, remaining essentially <br /> unchanged. It was
-					popularised in the 1960s with the release of <br /> Letraset sheets
-					containing Lorem Ipsum passages, and more <br /> recently with desktop
-					publishing software like Aldus PageMaker <br /> including versions of Lorem
-					Ipsum.
+					Lorem Ipsum is simply dummy text of the printing and typesetting
+					industry. Lorem Ipsum has been the industry's standard dummy text ever
+					since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book. It has survived not only
+					five centuries, but also the leap into electronic typesetting,
+					remaining essentially unchanged. It was popularised in the 1960s with
+					the release of Letraset sheets containing Lorem Ipsum passages, and
+					more recently with desktop publishing software like Aldus PageMaker
+					including versions of Lorem Ipsum.
 				</StyledLoremText>
 			</StyledLoremTextBox>
 		</StyledContainer>
@@ -40,21 +39,21 @@ const StyledContainer = styled("div")(({ theme }) => ({
 	display: "flex",
 	flexDirection: "column",
 	alignItems: "center",
-	padding: "10px 15px", // Уменьшены отступы
+	padding: "10px 15px",
 	boxSizing: "border-box",
 	[theme.breakpoints.down("sm")]: {
 		maxWidth: "270px",
-		padding: "10px 5px", // Уменьшены отступы на мобильных
+		padding: "10px 5px",
 	},
 }));
 
 const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
 	textAlign: "center",
 	fontWeight: "600",
-	fontSize: "28px", // Уменьшен размер шрифта
-	marginBottom: "15px", // Уменьшен отступ снизу
+	fontSize: "28px",
+	marginBottom: "15px",
 	[theme.breakpoints.down("sm")]: {
-		fontSize: "18px", // Уменьшен размер шрифта на мобильных
+		fontSize: "18px",
 	},
 }));
 
@@ -64,17 +63,17 @@ const StyledSocialNetworks = styled("div")(({ theme }) => ({
 	display: "flex",
 	justifyContent: "space-between",
 	alignItems: "center",
-	marginBottom: "15px", // Уменьшен отступ снизу
+	marginBottom: "15px",
 	[theme.breakpoints.down("sm")]: {
 		maxWidth: "211px",
 	},
 }));
 
 const StyledIcon = styled("img")(({ theme }) => ({
-	width: "90px", // Уменьшен размер иконок
+	width: "90px",
 	height: "90px",
 	[theme.breakpoints.down("sm")]: {
-		width: "40px", // Уменьшен размер иконок на мобильных
+		width: "40px",
 		height: "40px",
 	},
 }));
@@ -85,22 +84,27 @@ const StyledLoremTextBox = styled("div")(({ theme }) => ({
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
-	padding: "0 10px", // Уменьшены отступы
+	// padding: "0 10px",
 	boxSizing: "border-box",
 	[theme.breakpoints.down("sm")]: {
-		maxWidth: "317px",
+		width: "300px",
+		border: "1px solid black",
 	},
 }));
 
 const StyledLoremText = styled("p")(({ theme }) => ({
 	fontFamily: "sans-serif",
-	fontSize: "16px", // Уменьшен размер шрифта
+	fontSize: "18px",
 	fontWeight: "400",
-	textAlign: "justify",
+	textAlign: "justify", // Важное изменение для выравнивания текста
 	maxWidth: "100%",
-	overflowWrap: "break-word",
-	marginTop: "10px", // Уменьшен отступ сверху
+	overflowWrap: "break-word", // Автоматический перенос слов
+	marginTop: "10px",
 	[theme.breakpoints.down("sm")]: {
-		fontSize: "14px", // Размер шрифта на мобильных
+		fontSize: "18px",
+		textAlign: "center",
+		lineHeight: "27px",
+		fontFamily: "Montserrat,sans-serif",
+    fontWeight:500
 	},
 }));
