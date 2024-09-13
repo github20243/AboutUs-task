@@ -1,3 +1,49 @@
+import { Typography,styled } from "@mui/material";
+import React from "react";
+import whatsappLogo from "../assets/image 4.svg";
+import InstagramLogo from "../assets/image 5.svg";
+import TelegramLogo from "../assets/image 6.png";
+
+
+const AboutUs = () => {
+	return (
+		<StyledContainer>
+			<StyledTyphograpyText>По Вопросам</StyledTyphograpyText>
+			<StyledSocialNetworks>
+				<StyledWhatsapIcon
+					src={whatsappLogo}
+					alt="WhatsApp"
+				/>
+				<StyledInstagramIcon
+					src={InstagramLogo}
+					alt="Instagram"
+				/>
+				<StyledTelegramIcon
+					src={TelegramLogo}
+					alt="Telegram"
+				/>
+			</StyledSocialNetworks>
+			<StyledLoremTextBox>
+				<StyledLoremText>
+					Lorem Ipsum is simply dummy text of the printing and <br />{" "}
+					typesetting industry. Lorem Ipsum has been the industry's <br />{" "}
+					standard dummy text ever since the 1500s, when an unknown <br />{" "}
+					printer took a galley of type and scrambled it to make a type <br />{" "}
+					specimen book. It has survived not only five centuries, but also{" "}
+					<br /> the leap into electronic typesetting, remaining essentially{" "}
+					<br /> unchanged. It was popularised in the 1960s with the release
+					of <br /> Letraset sheets containing Lorem Ipsum passages, and more{" "}
+					<br /> recently with desktop publishing software like Aldus
+					PageMaker <br /> including versions of Lorem Ipsum.
+				</StyledLoremText>
+			</StyledLoremTextBox>
+		</StyledContainer>
+	);
+};
+
+export default AboutUs;
+
+
 const StyledContainer = styled("div")(({ theme }) => ({
   width: "787px",
   height: "681px",
