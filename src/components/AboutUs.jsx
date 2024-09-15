@@ -40,7 +40,7 @@ export default AboutUs;
 const StyledContainer = styled("div")(({ theme }) => ({
   width: "100%",
   maxWidth: "787px",
-  height: "681px",
+	height: "681px",
   margin: "20px auto",
   display: "flex",
   flexDirection: "column",
@@ -54,8 +54,8 @@ const StyledContainer = styled("div")(({ theme }) => ({
 const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   fontWeight: "600",
-  fontSize: "24px",
-  marginBottom: "20px",
+  fontSize: "24px", 
+  marginBottom: "20px", 
   fontFamily: "Montserrat, sans-serif",
   [theme.breakpoints.down("sm")]: {
     fontSize: "18px",
@@ -64,27 +64,27 @@ const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
 
 const StyledSocialNetworks = styled("div")(({ theme }) => ({
   width: "100%",
-  maxWidth: "300px",
+  maxWidth: "300px", 
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  marginBottom: "20px",
+  marginBottom: "20px", 
   [theme.breakpoints.down("sm")]: {
     maxWidth: "211px",
   },
 }));
 
 const StyledIconWrapper = styled("div")({
-  width: "72px",
+  width: "72px", 
   height: "72px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  cursor: "pointer",
+	cursor: "pointer"
 });
 
 const StyledIcon = styled("img")({
-  width: "48px",
+  width: "48px", 
   height: "48px",
 });
 
@@ -94,7 +94,7 @@ const StyledLoremTextBox = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  padding: "0 20px",
+  padding: "0 20px", 
   boxSizing: "border-box",
   [theme.breakpoints.down("sm")]: {
     width: "300px",
@@ -103,15 +103,16 @@ const StyledLoremTextBox = styled("div")(({ theme }) => ({
 
 const StyledLoremText = styled("p")(({ theme }) => ({
   fontFamily: "Montserrat, sans-serif",
-  fontSize: "18px",
+  fontSize: "18px", 
   fontWeight: "400",
-  textAlign: "justify",
+  textAlign: "justify", 
   maxWidth: "60%",
   overflowWrap: "break-word",
-  lineHeight: "28px",
+  lineHeight: "28px", 
   marginTop: "0px",
   [theme.breakpoints.down("md")]: {
     fontSize: "16px",
     lineHeight: "24px",
+		maxWidth: "100%",
   },
 }));
