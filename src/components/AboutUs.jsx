@@ -100,7 +100,7 @@ const StyledLoremText = styled("p")(({ theme }) => ({
 	maxWidth: "100%",
 	overflowWrap: "break-word", // Автоматический перенос слов
 	marginTop: "10px",
-	[theme.breakpoints.down("sm")]: {
+	[theme.breakpoints.down("md")]: {
 		fontSize: "18px",
 		textAlign: "center",
 		lineHeight: "27px",
