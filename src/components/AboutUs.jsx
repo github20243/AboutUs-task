@@ -131,7 +131,7 @@ const StyledLoremText = styled("p")(({ theme }) => ({
 		maxWidth: "100%",
   },
   [theme.breakpoints.down("lg")]: {
-    fontSize: "17px",
+    fontSize: "19px",
     lineHeight: "24px",
     maxWidth: "100%",
   }
