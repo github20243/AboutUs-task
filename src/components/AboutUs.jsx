@@ -51,7 +51,6 @@ const StyledContainer = styled("div")(({ theme }) => ({
   },
   [theme.breakpoints.down("sm")]: {
     maxWidth: "300px",
-    
   },
 }));
 
@@ -65,7 +64,7 @@ const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
     fontSize: "18px",
   },
   [theme.breakpoints.down("lg")]: {
-    fontSize: "20px",
+    fontSize: "22px",
   },
 }));
 
@@ -80,7 +79,8 @@ const StyledSocialNetworks = styled("div")(({ theme }) => ({
     maxWidth: "211px",
   },
   [theme.breakpoints.down("lg")]: {
-    maxWidth: "211px",
+    maxWidth: "240px",
+    border: "1px solid aqua"
   },
 
 }));
@@ -111,9 +111,8 @@ const StyledLoremTextBox = styled("div")(({ theme }) => ({
     width: "300px",
   },
   [theme.breakpoints.down("lg")]: {
-    width: "400px",
+    width: "380px",
     border: "1px solid blue"
-
   }
 }));
 
@@ -132,7 +131,7 @@ const StyledLoremText = styled("p")(({ theme }) => ({
 		maxWidth: "100%",
   },
   [theme.breakpoints.down("lg")]: {
-    fontSize: "18px",
+    fontSize: "20px",
     lineHeight: "24px",
     maxWidth: "100%",
   }
