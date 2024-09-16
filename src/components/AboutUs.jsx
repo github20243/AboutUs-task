@@ -51,6 +51,7 @@ const StyledContainer = styled("div")(({ theme }) => ({
   },
   [theme.breakpoints.down("sm")]: {
     maxWidth: "300px",
+    
   },
 }));
 
@@ -110,7 +111,9 @@ const StyledLoremTextBox = styled("div")(({ theme }) => ({
     width: "300px",
   },
   [theme.breakpoints.down("lg")]: {
-    width: "400px"
+    width: "400px",
+    border: "1px solid blue"
+
   }
 }));
 
