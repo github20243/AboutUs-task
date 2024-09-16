@@ -49,6 +49,9 @@ const StyledContainer = styled("div")(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     maxWidth: "270px",
   },
+  [theme.breakpoints.down("sm")]: {
+    maxWidth: "300px",
+  },
 }));
 
 const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
@@ -59,6 +62,9 @@ const StyledTyphograpyText = styled(Typography)(({ theme }) => ({
   fontFamily: "Montserrat, sans-serif",
   [theme.breakpoints.down("sm")]: {
     fontSize: "18px",
+  },
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "20px",
   },
 }));
 
@@ -72,6 +78,10 @@ const StyledSocialNetworks = styled("div")(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     maxWidth: "211px",
   },
+  [theme.breakpoints.down("lg")]: {
+    maxWidth: "211px",
+  },
+
 }));
 
 const StyledIconWrapper = styled("div")({
@@ -99,6 +109,9 @@ const StyledLoremTextBox = styled("div")(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     width: "300px",
   },
+  [theme.breakpoints.down("lg")]: {
+    width: "400px"
+  }
 }));
 
 const StyledLoremText = styled("p")(({ theme }) => ({
@@ -115,4 +128,9 @@ const StyledLoremText = styled("p")(({ theme }) => ({
     lineHeight: "24px",
 		maxWidth: "100%",
   },
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "18px",
+    lineHeight: "26px",
+    maxWidth: "100%",
+  }
 }));
