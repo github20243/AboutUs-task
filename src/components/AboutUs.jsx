@@ -118,7 +118,7 @@ const StyledLoremText = styled("p")(({ theme }) => ({
 	fontFamily: "Montserrat, sans-serif",
 	fontSize: "18px",
 	fontWeight: "400",
-	textAlign: "justify",
+	textAlign: "center",
 	maxWidth: "60%",
 	overflowWrap: "break-word",
 	lineHeight: "28px",
